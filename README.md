@@ -6,6 +6,6 @@
   <a href="https://viniciusllx.github.io/html-css/Desafios/d010/desafio010.html"> Executar o Desafio 010.</a>
 
 
-  <img src="Documentos/frame(02)" alt="">
+ 
 
   
