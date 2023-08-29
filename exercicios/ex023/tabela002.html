@@ -13,6 +13,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th{
@@ -24,22 +32,32 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody >tr:nth-child(2n){
+            background-color: lightgray;
         }
 
         td.num{
             text-align: right;
         }
-        
+
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
 
             </tr>
         </thead>
@@ -156,10 +174,21 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>203 062 512</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td>
+                    <strong>203.062.512</strong>
+                </td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore dolorem numquam ex iusto provident. Beatae ducimus, porro magni facere voluptates libero quae incidunt accusamus enim rem sed eius doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta cumque obcaecati culpa! Quas fugiat eveniet suscipit exercitationem perspiciatis voluptate similique praesentium tenetur nisi cumque libero neque sunt vero, minus ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum earum ratione asperiores recusandae beatae culpa, dolorum harum eligendi placeat officiis consectetur, dolorem veniam delectus et quam, inventore labore ut vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cumque suscipit exercitationem, deserunt, rem odio enim nemo voluptatibus reprehenderit natus vel. Officia odit illo dignissimos distinctio eligendi minima consequuntur sit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore dolorem numquam ex iusto provident. Beatae ducimus, porro magni facere voluptates libero quae incidunt accusamus enim rem sed eius doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta cumque obcaecati culpa! Quas fugiat eveniet suscipit exercitationem perspiciatis voluptate similique praesentium tenetur nisi cumque libero neque sunt vero, minus ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum earum ratione asperiores recusandae beatae culpa, dolorum harum eligendi placeat officiis consectetur, dolorem veniam delectus et quam, inventore labore ut vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cumque suscipit exercitationem, deserunt, rem odio enim nemo voluptatibus reprehenderit natus vel. Officia odit illo dignissimos distinctio eligendi minima consequuntur sit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore dolorem numquam ex iusto provident. Beatae ducimus, porro magni facere voluptates libero quae incidunt accusamus enim rem sed eius doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta cumque obcaecati culpa! Quas fugiat eveniet suscipit exercitationem perspiciatis voluptate similique praesentium tenetur nisi cumque libero neque sunt vero, minus ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum earum ratione asperiores recusandae beatae culpa, dolorum harum eligendi placeat officiis consectetur, dolorem veniam delectus et quam, inventore labore ut vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cumque suscipit exercitationem, deserunt, rem odio enim nemo voluptatibus reprehenderit natus vel. Officia odit illo dignissimos distinctio eligendi minima consequuntur sit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore dolorem numquam ex iusto provident. Beatae ducimus, porro magni facere voluptates libero quae incidunt accusamus enim rem sed eius doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta cumque obcaecati culpa! Quas fugiat eveniet suscipit exercitationem perspiciatis voluptate similique praesentium tenetur nisi cumque libero neque sunt vero, minus ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum earum ratione asperiores recusandae beatae culpa, dolorum harum eligendi placeat officiis consectetur, dolorem veniam delectus et quam, inventore labore ut vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cumque suscipit exercitationem, deserunt, rem odio enim nemo voluptatibus reprehenderit natus vel. Officia odit illo dignissimos distinctio eligendi minima consequuntur sit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore dolorem numquam ex iusto provident. Beatae ducimus, porro magni facere voluptates libero quae incidunt accusamus enim rem sed eius doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta cumque obcaecati culpa! Quas fugiat eveniet suscipit exercitationem perspiciatis voluptate similique praesentium tenetur nisi cumque libero neque sunt vero, minus ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum earum ratione asperiores recusandae beatae culpa, dolorum harum eligendi placeat officiis consectetur, dolorem veniam delectus et quam, inventore labore ut vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cumque suscipit exercitationem, deserunt, rem odio enim nemo voluptatibus reprehenderit natus vel. Officia odit illo dignissimos distinctio eligendi minima consequuntur sit?</p>
 </body>
 </html>
